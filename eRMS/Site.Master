@@ -70,9 +70,28 @@
                         </AnonymousTemplate>
                         <LoggedInTemplate>
                             <ul class="nav navbar-nav navbar-right">
-                                <li><a runat="server" href="~/Account/Manage" title="Manage your account">Hello, <%: Page.User.Identity.Name  %> !</a></li>
-                                <li>
-                                    <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Log off" LogoutPageUrl="~/" OnLoggingOut="Unnamed_LoggingOut" />
+                                <li class="dropdown">
+                                    <a runat="server"
+                                        href="#"
+                                        class="dropdown-toggle"
+                                        data-toggle="dropdown"
+                                        role="button"
+                                        aria-haspopup="true"
+                                        aria-expanded="false">
+                                        <span class="badge"><%: System.Web.Security.Roles.GetRolesForUser().FirstOrDefault() %></span>
+                                        <asp:LoginName ID="loginName1" runat="server" />
+                                        <span class="caret"></span>
+                                        <ul class="dropdown-menu">
+                                            <li><a runat="server" href="#">Link 1</a></li>
+                                            <li>
+                                                <asp:LoginStatus runat="server"
+                                                    LogoutAction="RedirectToLoginPage"
+                                                    LogoutText="Log out"
+                                                    LogoutPageUrl="~/"
+                                                    OnLoggingOut="Unnamed_LoggingOut" />
+                                            </li>
+                                        </ul>
+                                    </a>
                                 </li>
                             </ul>
                         </LoggedInTemplate>
@@ -80,6 +99,7 @@
                 </div>
             </div>
         </div>
+        <br />
         <div class="container body-content">
             <div class="breadcrumb small">
                 <asp:SiteMapPath ID="SiteMapPath1" runat="server"></asp:SiteMapPath>
