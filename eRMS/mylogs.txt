@@ -1,1 +1,23 @@
 ﻿
+
+==================================================================
+=================== JUNE 24 2016 =================================
+==================================================================
+- use EF
+- class lib for helpers
+- friendly urls
+
+> create class lib that will handle helper functions such as:
+
+- javascript
+	- show modal
+	- hide modal
+
+- AccountManagement
+	- activate user
+	- deactivate user
+	- reset password
+	- change role
+	- lock user
+	- unlock user
+
