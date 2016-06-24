@@ -8,10 +8,9 @@
 - friendly urls
 
 > create class lib that will handle helper functions such as:
-
 - javascript
-	- show modal
-	- hide modal
+	- show modal ***done***
+	- hide modal ***done***
 
 - AccountManagement
 	- activate user
@@ -20,4 +19,7 @@
 	- change role
 	- lock user
 	- unlock user
+
+- construct login page
+- construct change pass
 

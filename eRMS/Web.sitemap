@@ -3,5 +3,10 @@
     <siteMapNode url="~/" title="Home"  description="">
         <siteMapNode url="~/Account/Login" title="Login"  description="" />
         <siteMapNode url="" title=""  description="" />
+
+        <!-- Accounts -->
+      <siteMapNode title="Account">
+        <siteMapNode url="~/Account/change-password" title="Change Password"></siteMapNode>
+      </siteMapNode>
     </siteMapNode>
 </siteMap>

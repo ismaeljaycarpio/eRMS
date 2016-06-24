@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace EHIUtils
 {
-    public class Class1
+    class AccountHelper
     {
+
     }
 }

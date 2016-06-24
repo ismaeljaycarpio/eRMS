@@ -7,18 +7,18 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace eRMS {
+namespace eRMS.Account {
     
     
-    public partial class _Default {
+    public partial class change_password {
         
         /// <summary>
-        /// h1heading control.
+        /// ChangePassword1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl h1heading;
+        protected global::System.Web.UI.WebControls.ChangePassword ChangePassword1;
     }
 }
