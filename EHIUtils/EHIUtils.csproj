@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AccountHelper.cs" />
+    <Compile Include="AuditTrail.cs" />
     <Compile Include="Javascript.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
