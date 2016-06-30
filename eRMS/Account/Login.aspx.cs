@@ -12,10 +12,6 @@ namespace eRMS.Account
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if(!Page.IsPostBack)
-            {
-                Membership.CreateUser("ismael", "ismael");
-            }
         }
     }
 }
